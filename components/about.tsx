@@ -17,33 +17,19 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+      <SectionHeading>About Me</SectionHeading>  
+      <p className="mb-3">A Developer Who Loves Problem-Solving & Innovation</p>  
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+      <p className="mb-3">  
+        After graduating high school, I decided to pivot towards my passion for technology. I pursued further education in <span className="font-medium">Computer Science</span> and enrolled in coding programs to build a solid foundation in full-stack web development.  
+        <span className="italic"> My favourite part of programming</span> is the challenge of solving complex problems and bringing ideas to life through code. I <span className="underline">love</span> building intuitive, scalable, and user-friendly web applications. My core stack includes  
+        <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>. I am also experienced with TypeScript, Express, and REST APIs. I am always eager to learn and explore new technologies. Right now, I’m looking for a  
+        <span className="font-medium">front-end developer</span> role where I can contribute and grow.  
+      </p>  
+
+      <p>  
+        <span className="italic">When I'm not coding</span>, you’ll find me playing basketball, watching tech talks, or working on passion projects. I enjoy <span className="font-medium">learning new things</span>, from software development best practices to personal growth and productivity strategies.  
+      </p>  
     </motion.section>
   );
 }

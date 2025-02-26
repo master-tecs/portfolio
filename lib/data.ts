@@ -2,9 +2,24 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import airImg from "@/public/Air.png";
+import AllShop from "@/public/AllShop.png";
+import schoolabroad from "@/public/schoolabroad.png";
+import profilePic from "@/public/profile.jpeg";
+import { link } from "fs";
+
+export const info = {
+  firstName: "Abdul-Wahab",
+  lastName: "Abdurrasheed",
+  title: "Full-Stack Developer",
+  description: "Full-Stack Developer",
+  email: "masterawahab@gmail.com",
+  phone: "+1 (437) 221-1910",
+  address: "179 Trail Rigde ln, Markham, ON, Canada",
+  github: "https://github.com/master-tecs",
+  linkedin: "https://www.linkedin.com/in/abdul-wahab-abdurrasheed-6231341b9/",
+  profilePic: profilePic,
+};
 
 export const links = [
   {
@@ -35,52 +50,54 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Doha, Qatar",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked as a front-end developer for two years, contributing to multiple projects that focused on building interactive and user-friendly web applications. During this time, I enhanced my skills in React, JavaScript, and modern UI frameworks, eventually expanding into full-stack development.",
     icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Front-End Developer",
+    location: "Kaduna, Nigeria",
+    description:
+      "Gained further experience in front-end development, working on projects that emphasized performance optimization, responsive design, and seamless user experiences. Continued expanding my expertise in React and Next.js.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021 - 2022",
+  },
+  {
+    title: "Full-Stack Developer & Freelancer",
     location: "Toronto, ON",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Currently working as a full-stack developer and freelancer, building scalable web applications with React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. Passionate about creating efficient, high-performance solutions. Open to full-time opportunities in front-end or full-stack development.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2021 - Present",
   },
 ] as const;
-
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "School Abroad",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "School Abroad is your ultimate guide to studying overseas. From finding the best universities to application tips and scholarship opportunities, School Abroad helps you navigate every step of your international education journey with ease.",
+    tags: ["React", "Next.js", "MongoDB", "Bootstrap", "Framer"],
+    imageUrl: schoolabroad,
+    link: "https://www.schoolabroad.org/"
   },
   {
-    title: "rmtDev",
+    title: "Air (AI Resume Generator)",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Air is an AI-powered resume generator that helps you create professional, tailored resumes in minutes. With smart suggestions and easy customization, Air makes job applications faster and more efficient.",
+    tags: ["React", "Vite", "LLM API", "Tailwind"],
+    imageUrl: airImg,
+    link: "https://unique-valkyrie-38b7fa.netlify.app/"
   },
   {
-    title: "Word Analytics",
+    title: "AllShops",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "AllShops is an easy-to-use online marketplace where users can buy and sell a wide range of products. With secure payments, direct messaging, and a seamless shopping experience, AllShops connects buyers and sellers in a hassle-free way. Start exploring today!",
+    tags: ["React", "TypeScript", "SASS", "Redux"],
+    imageUrl: AllShop,
+    link: "https://mshops.netlify.app/"
   },
 ] as const;
 
@@ -101,4 +118,8 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+  "Laravel",
+  "ISO development",
+  "Swift",
+  "SQL"
 ] as const;
